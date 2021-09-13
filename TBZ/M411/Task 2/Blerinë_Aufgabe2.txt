@@ -1,0 +1,12 @@
+Data structures
+
+- linked list
+- arrays
+- hash table
+- stack (last in, last out)
+- queue (first in, first out)
+- graphs
+- trees
+
+Data structures sind Arten, wie Daten/Information abgespeichert werden können in einem Programm.
+Graphen werden z.B. bei Social Media benutzt, um die Profile abzuspeichern. 

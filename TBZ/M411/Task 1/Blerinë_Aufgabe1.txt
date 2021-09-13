@@ -1,0 +1,28 @@
+1. Ein Algorithmus ist eine Vorgehensweise zur Lösung eines Problems. Dies kann mathematisch, technisch oder auch schon ein rein menschliches Problem sein.
+
+2. Algorithmen können überall angewendet werden - beliebte Einsatzorte sind z.B. Youtube, um Videos vorzuschlagen oder TikTok, ebenfalls um die Themen vorzuschlagen, welche bereits mehrmals angesehen werden. In der IT werden Algorithmen gerne verwendet, um eine Seite zu personalisieren oder um im Departement der künstlichen Intelligenz angewendet zu werden. 
+
+3. Die Eigenschaften eines Algorithmus sind:
+
+- Eindeutigkeit
+Ein Algorithmus darf in sich keine Widersprüche haben. Die Logik muss schlüssig sein.
+
+- Finitheit
+Ein Algorithmus muss mit endlich vielen Zeichen beschrieben werden können.
+
+- Terminierung
+Ein Algorithmus muss irgendwann zu einem Ende kommen und ein Ergebnis liefern, kann also nicht einfach unendlich lange weiterlaufen.
+
+- Determinismus
+Es ist zu jedem Zeitpunkt klar, welcher Schritt als nächsten ausgeführt wird. Ähnlich wie bei einem Rezept. Es ist klar, was als nächstes passiert und welche Zutaten benutzt werden.
+
+- Determiniertheit
+Bei gleicher Eingabe muss dasselbe Ergebnis rauskommen. Bsp: Taschenrechner. 
+
+- Ausführbarkeit
+Der Algorithmus muss verständlich formuliert und ausführbar sein.
+
+Praktische Übung: 
+1. Der Algorithmus kommt zu einem Ende, wenn die Ausgabe auf der Konsole erscheint, dass z eine Primzahl ist oder eben nicht.
+
+2. Man kann eine Zahl eingeben. Damit der Algorithmus vollendet bzw. begonnen werden kann, muss sogar eine Zahl eingegeben werden, ansonsten kann gar keine Zahl überprüft werden und die Vorgehensweise wird nie gestartet, da die Information dazu fehlt.

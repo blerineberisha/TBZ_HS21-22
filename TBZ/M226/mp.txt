@@ -1,0 +1,12 @@
+* listAllFiles
+* listMatching
+* Track.java
+- ArrayList<String> --> ArrayList<Track>
+- playSample
+- inputReader
+- TrackReader
+- UML
+- TestClass
+- playRandom();
+- GUI? 
+- play every track once in random order
