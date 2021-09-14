@@ -1,20 +1,20 @@
 package music;
 
+
 public class Track {
     private String artist;
     private String title;
     private String filename;
 
-    public Track(String filename) {
+
+    public Track(String artist, String title, String filename){
         this.artist = artist;
         this.title = title;
         this.filename = filename;
     }
 
+
     public String getArtist() {
-        artist = filename.replace("Audio/", "").replace(".mp3", "");
-        String art[] = artist.split("-");
-        artist = art[0];
         return artist;
     }
 
@@ -23,9 +23,6 @@ public class Track {
     }
 
     public String getTitle() {
-        title = filename.replace("Audio/", "").replace(".mp3", "");
-        String cut[] = title.split("-");
-        title = cut[1];
         return title;
     }
 
@@ -34,7 +31,6 @@ public class Track {
     }
 
     public String getFilename() {
-        filename = filename.replace("Audio/", "").replace(".mp3", "");
         return filename;
     }
 
