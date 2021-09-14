@@ -9,5 +9,8 @@ public class Main {
         list.addNode("More stuff!");
         list.printList(list);
         list.printReverse(list);
+        list.removeElement(list, "More stuff!");
+        list.setListCount(list.getListCount()-1);
+        list.printList(list);
     }
 }

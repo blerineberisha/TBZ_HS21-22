@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class MyLinkedList {
     private Node head;
     private int listCount;
@@ -44,21 +46,22 @@ public class MyLinkedList {
         }
     }
 
-    public void deleteItem(MyLinkedList list, String search) {
-        Node current = head.getNext();
-        while (current.getNext() != null && current.getItem() != search) {
-            if (current.getNext().getItem().equals(search)) {
-                if (current.getNext().getNext() != (null)) {
-                    Node next = current.getNext().getNext();
-                    current.setNext(next);
-                } else {
-                    current.setNext(null);
+    public void removeElement(MyLinkedList list, String search) throws NullPointerException {
+        try {
+            Node current = head.getNext();
+            while (current.getNext() != null && current.getItem() != search) {
+                if (current.getNext().getItem().equals(search)) {
+                    if (current.getNext().getNext() != (null)) {
+                        Node next = current.getNext().getNext();
+                        current.setNext(next);
+                    } else current.setNext(null);
                 }
+                current = current.getNext();
             }
-            System.out.println(current.getItem() + "test");
-            current = current.getNext();
+            listCount--;
+        }catch(Exception e){
+            e.printStackTrace();
         }
-        listCount--;
     }
 
 
