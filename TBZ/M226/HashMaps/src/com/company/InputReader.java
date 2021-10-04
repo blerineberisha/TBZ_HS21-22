@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class InputReader {
 Scanner scan = new Scanner(System.in);
-    private String readInput() {
+    public String readInput() {
         System.out.print("> ");
         String input = scan.nextLine();
         String result = input.trim();
-        return input.toLowerCase();
+        return result.toLowerCase();
     }
 
     public Scanner getScan() {
