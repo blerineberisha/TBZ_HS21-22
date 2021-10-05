@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.HashMap;
-import java.util.Locale;
 
 public class Responder {
     InputReader ir = new InputReader();
@@ -13,10 +12,16 @@ public class Responder {
     }
 
     private void printResponse(){
-        System.out.println("Describe your problem.");
-        String input = ir.readInput();
-        if(responseMap.containsKey(input)){
-            System.out.println(responseMap.get(input));
+        System.out.println("Please describe your problem.");
+        String[] input = ir.readInput();
+
+        for(int i=0; i < input.length; i++)
+        if(responseMap.containsKey(input[i])){
+            System.out.println(responseMap.get(input[i]));
+        }
+        else{
+            System.out.println("I don't know either man.");
+            break;
         }
     }
 
