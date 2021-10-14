@@ -1,0 +1,3 @@
+Use cases: 
+
+The user can enter a problem. It can be long, it can be one word and the program will give a response.
