@@ -1,4 +1,4 @@
-package com.company;
+package blerine.berisha;
 
 /**
  * -----------------------------------------------------
@@ -10,5 +10,5 @@ package com.company;
  * ------------------------------------------------------
  **/
 public class Subject {
-    
+
 }
