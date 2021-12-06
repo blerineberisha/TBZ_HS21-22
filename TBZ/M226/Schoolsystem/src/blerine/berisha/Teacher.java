@@ -21,6 +21,15 @@ public class Teacher extends Person {
         System.out.println("Teacher's information: ");
         System.out.println("-----------------------");
         super.showInfo();
+        System.out.println("Class room: " + getClassRoom());
         System.out.println("-----------------------");
+    }
+
+    public String getClassRoom() {
+        return classRoom;
+    }
+
+    public void setClassRoom(String classRoom) {
+        this.classRoom = classRoom;
     }
 }
