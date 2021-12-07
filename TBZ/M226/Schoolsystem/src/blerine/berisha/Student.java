@@ -1,8 +1,5 @@
 package blerine.berisha;
 
-import java.util.Random;
-import java.util.UUID;
-
 /**
  * -----------------------------------------------------
  * Author:          Blerinë Berisha
@@ -20,12 +17,6 @@ public class Student extends Person {
         super(firstName, lastName, dateOfBirth, email);
         this.schoolClass = schoolClass;
         this.studentNumber = studentNumber;
-    }
-
-    public Student(String firstName, String lastName, String dateOfBirth, String email, SchoolClass schoolClass) {
-        super(firstName, lastName, dateOfBirth, email);
-        this.studentNumber = new Random().nextInt(1000);
-        this.schoolClass = schoolClass;
     }
 
     @Override

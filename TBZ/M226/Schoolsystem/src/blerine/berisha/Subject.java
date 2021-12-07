@@ -10,5 +10,27 @@ package blerine.berisha;
  * ------------------------------------------------------
  **/
 public class Subject {
+    String subject; 
+    int noOfLessons;
 
+    public Subject(String subject, int noOfLessons) {
+        this.subject = subject;
+        this.noOfLessons = noOfLessons;
+    }
+
+    public String getSubject() {
+        return this.subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public int getNoOfLessons() {
+        return this.noOfLessons;
+    }
+
+    public void setNoOfLessons(int noOfLessons) {
+        this.noOfLessons = noOfLessons;
+    }
 }
