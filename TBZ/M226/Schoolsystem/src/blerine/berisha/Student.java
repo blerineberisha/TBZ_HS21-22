@@ -16,15 +16,16 @@ public class Student extends Person {
     private SchoolClass schoolClass;
     private int studentNumber;
 
-    public Student(String firstName, String lastName, String dateOfBirth, String email, String schoolClass) {
+    public Student(String firstName, String lastName, String dateOfBirth, String email, SchoolClass schoolClass, int studentNumber) {
         super(firstName, lastName, dateOfBirth, email);
-        this.schoolClass = SchoolManager.findClass(schoolClass);
-        this.studentNumber = new Random().nextInt(1000);
+        this.schoolClass = schoolClass;
+        this.studentNumber = studentNumber;
     }
 
-    public Student(String firstName, String lastName, String dateOfBirth, String email) {
+    public Student(String firstName, String lastName, String dateOfBirth, String email, SchoolClass schoolClass) {
         super(firstName, lastName, dateOfBirth, email);
         this.studentNumber = new Random().nextInt(1000);
+        this.schoolClass = schoolClass;
     }
 
     @Override

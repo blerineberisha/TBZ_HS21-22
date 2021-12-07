@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Date:            30.11.2021
  * Project:         School class with topic
  * Description:     A program that simulates a school,
- * its students and its courses
+ *                  its students and its courses
  * ------------------------------------------------------
  **/
 public class SchoolClass {
@@ -18,29 +18,11 @@ public class SchoolClass {
     private Teacher mainTeacher;
     private Student classRep;
 
-    public SchoolClass(String className, Teacher mainTeacher, Student classRep) {
+    public SchoolClass(String className, ArrayList<Student> studentList,Teacher mainTeacher, Student classRep) {
         this.className = className;
+        this.studentList = studentList;
         this.mainTeacher = mainTeacher;
         this.classRep = classRep;
-    }
-
-    public static SchoolClass newClass() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the classname: \n<");
-        String className = scan.next();
-        System.out.println("Enter the main teacher's last name: \n<");
-        String mainTeacher = scan.next();
-        Teacher teacher = SchoolManager.findByName(mainTeacher);
-        if (teacher == null) {
-            System.err.println("Teacher not found");
-        }
-        System.out.println("Enter the class representative's student ID: \n<");
-        int studentID = scan.nextInt();
-        Student student = SchoolManager.findByID(studentID);
-        if (student == null) {
-            System.err.println("Student not found");
-        }
-        return new SchoolClass(className, teacher, student);
     }
 
     public String getClassName() {
