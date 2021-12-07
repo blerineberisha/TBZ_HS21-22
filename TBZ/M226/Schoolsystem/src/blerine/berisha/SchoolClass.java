@@ -18,12 +18,11 @@ public class SchoolClass {
     private Student classRep;
     private ArrayList<Subject> subjects;
 
-    public SchoolClass(String className, ArrayList<Student> studentList, Teacher mainTeacher, Student classRep,
-            ArrayList<Subject> subjects) {
+    public SchoolClass(String className, ArrayList<Student> studentList, Teacher mainTeacher,
+                       ArrayList<Subject> subjects) {
         this.className = className;
         this.studentList = studentList;
         this.mainTeacher = mainTeacher;
-        this.classRep = classRep;
         this.subjects = subjects;
     }
 
