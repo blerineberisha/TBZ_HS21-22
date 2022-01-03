@@ -10,5 +10,5 @@ package com.company;
  * ------------------------------------------------------
  **/
 public class StockTokyo {
-    
+
 }
